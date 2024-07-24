@@ -17,6 +17,5 @@ RUN west update
 RUN west zephyr-export
 
 # Build commands for both the keyboard and dongle firmware
-CMD ["bash", "-c", "west build -b nice_nano_v2 -d build/rev57lp_left config/boards/shields/rev57lp/left && \
-                    west build -b nice_nano_v2 -d build/rev57lp_right config/boards/shields/rev57lp/right && \
+CMD ["bash", "-c", "west build -b nice_nano_v2 -d build/rev57lp config/boards/shields/rev57lp && \
                     west build -b nice_nano_v2 -d build/nice_nano_dongle config/boards/shields/nice_nano_dongle"]

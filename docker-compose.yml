@@ -5,8 +5,7 @@ services:
     volumes:
       - .:/app
       - zmk-root:/app/zmk
-      - rev57lp_left_build:/app/build/rev57lp_left
-      - rev57lp_right_build:/app/build/rev57lp_right
+      - rev57lp_build:/app/build/rev57lp
       - nice_nano_dongle_build:/app/build/nice_nano_dongle
     environment:
       - ZEPHYR_BASE=/app/zephyr
@@ -14,6 +13,5 @@ services:
 
 volumes:
   zmk-root:
-  rev57lp_left_build:
-  rev57lp_right_build:
+  rev57lp_build:
   nice_nano_dongle_build:
