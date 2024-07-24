@@ -1,4 +1,4 @@
-#include "rev57lp.dtsi"
+#include "r57.dtsi"
 
 &kscan0 {
 	col-gpios

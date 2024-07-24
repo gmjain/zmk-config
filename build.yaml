@@ -17,8 +17,8 @@
 #     artifact-name: corne_left_with_logging
 #
 ---
-board: [ "nice_nano_v2" ]
-shield: [ "rev57lp_keyboard", "rev57lp_dongle" ]
-# include:
-#   - board: nice_nano_v2
-#     shield: [ "rev57lp_keyboard", "rev57lp_dongle" ]
+include:
+  - board: nice_nano_v2
+    shield: r57_kb
+  - board: nice_nano_v2
+    shield: r57_dongle

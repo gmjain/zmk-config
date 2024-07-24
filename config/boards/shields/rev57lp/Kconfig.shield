@@ -1,8 +1,0 @@
-# Copyright (c) 2020 The ZMK Contributors
-# SPDX-License-Identifier: MIT
-
-config SHIELD_REV57LP_KEYBOARD
-    def_bool $(shields_list_contains,rev57lp_keyboard)
-
-config SHIELD_REV57LP_DONGLE
-    def_bool $(shields_list_contains,rev57lp_dongle)

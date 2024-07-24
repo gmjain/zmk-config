@@ -1,5 +1,5 @@
 file_format: "1"
-id: rev57lp
+id: r57
 name: Rev57LP
 type: shield
 url: https://github.com/piit79/rev57lp
@@ -7,5 +7,5 @@ requires: [pro_micro]
 features:
   - keys
 siblings:
-  - rev57lp_keyboard
-  - rev57lp_dongle
+  - r57_kb
+  - r57_dongle

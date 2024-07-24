@@ -1,10 +1,10 @@
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_REV57LP_DONGLE
+if SHIELD_R57_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "Rev57LP Dongle"
+	default "R57 Dongle"
 
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
 	default y
@@ -14,7 +14,7 @@ config ZMK_USB
 
 endif
 
-if SHIELD_REV57LP_KEYBOARD || SHIELD_REV57LP_DONGLE
+if SHIELD_R57_KB || SHIELD_R57_DONGLE
 
 config ZMK_SPLIT
 	default y
