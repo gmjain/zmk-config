@@ -5,11 +5,15 @@ services:
     volumes:
       - .:/app
       - zmk-root:/app/zmk
-      - zmk-build:/app/build
+      - rev57lp_left_build:/app/build/rev57lp_left
+      - rev57lp_right_build:/app/build/rev57lp_right
+      - nice_nano_dongle_build:/app/build/nice_nano_dongle
     environment:
       - ZEPHYR_BASE=/app/zephyr
       - GNUARMEMB_TOOLCHAIN_PATH=/usr/local/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
 
 volumes:
   zmk-root:
-  zmk-build:
+  rev57lp_left_build:
+  rev57lp_right_build:
+  nice_nano_dongle_build:
