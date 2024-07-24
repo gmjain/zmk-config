@@ -8,10 +8,5 @@ RUN apt-get update && apt-get install -y \
 # Set up work directory
 WORKDIR /app
 
-# Set up the ZMK environment
-RUN west init -l /app && \
-    west update && \
-    west zephyr-export
-
 # Set the entrypoint to bash
 ENTRYPOINT ["/bin/bash"]
