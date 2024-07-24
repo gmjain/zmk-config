@@ -1,6 +1,15 @@
 #include "r57.dtsi"
 
-&kscan0 {
-		compatible = "zmk,kscan-gpio-direct";
-		input-gpios = <&gpio0 15 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	};
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+        zephyr,display = &oled;
+    };
+
+    mock_kscan: kscan_1 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
