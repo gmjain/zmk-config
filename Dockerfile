@@ -12,5 +12,9 @@ WORKDIR /app
 ENV ZEPHYR_BASE=/app/zephyr
 ENV GNUARMEMB_TOOLCHAIN_PATH=/usr/local/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
 
-# Set the entrypoint to bash
-ENTRYPOINT ["/bin/bash"]
+# Create a non-root user
+RUN useradd -m -u 1000 zmkuser
+USER zmkuser
+
+# Set the working directory to the user's home
+WORKDIR /home/zmkuser

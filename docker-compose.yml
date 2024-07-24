@@ -3,5 +3,4 @@ services:
   zmk-build:
     build: .
     volumes:
-      - .:/app
-    # command: ["./build.sh"]
+      - .:/home/zmkuser/app
