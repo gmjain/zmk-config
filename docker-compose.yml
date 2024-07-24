@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - .:/app
-    command: ["./build.sh"]
+    # command: ["./build.sh"]
