@@ -4,8 +4,4 @@ services:
     build: .
     volumes:
       - .:/app
-    environment:
-      - ZEPHYR_BASE=/app/zephyr
-      - GNUARMEMB_TOOLCHAIN_PATH=/usr/local/arm-gnu-toolchain-12.2.rel1-x86_64-arm-none-eabi
-    # command: ["./build.sh"]
-    command: ["sleep 10000"]
+    command: ["./build.sh"]
