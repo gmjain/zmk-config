@@ -8,11 +8,11 @@ RUN apt-get update && apt-get install -y \
 # Set up work directory
 WORKDIR /app
 
-# Copy the ZMK configuration
-COPY . /app/config
+# Copy the ZMK configuration and west.yml
+COPY . /app
 
 # Set up the ZMK environment
-RUN west init -l config
+RUN west init -l /app
 RUN west update
 RUN west zephyr-export
 
