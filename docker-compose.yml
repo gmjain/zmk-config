@@ -1,6 +1,0 @@
-version: '3'
-services:
-  zmk-build:
-    build: .
-    volumes:
-      - .:/home/zmkuser/app
