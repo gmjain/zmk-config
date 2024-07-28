@@ -4,22 +4,16 @@
 if SHIELD_R57_DONGLE
 
 config ZMK_KEYBOARD_NAME
-	default "R57 Dongle"
+	default "R57LP"
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-
-config ZMK_USB
+config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 endif
 
-if SHIELD_R57_KB || SHIELD_R57_DONGLE
+if SHIELD_R57_DONGLE || SHIELD_R57_KB
 
 config ZMK_SPLIT
-	default y
-
-config ZMK_BLE
 	default y
 
 endif
